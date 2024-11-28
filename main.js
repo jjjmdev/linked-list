@@ -145,6 +145,10 @@ class LinkedList {
 	}
 
 	// Clear list
+	clearList() {
+		this._head = null
+		this._size = 0
+	}
 
 	// Print list value
 	toString() {
@@ -198,4 +202,7 @@ console.log(list.size)
 // console.log(list.contains(100))
 // console.log(list.find(340))
 list.removeAt(4)
+console.log(list.toString())
+
+list.clearList()
 console.log(list.toString())
